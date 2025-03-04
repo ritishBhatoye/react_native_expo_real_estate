@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context"
 import {Image, View,Text, TouchableOpacity} from 'react-native';
 import images from "@/constants/images";
 import icons from '@/constants/icons';
+import { Link, router } from 'expo-router';
 // import images from "@/contants/images";
 
 const SignIn=()=>{
@@ -22,8 +23,15 @@ return (
             <Text className='text-primary-300'>Your Ideal Home</Text>
         </Text>
         <Text className='text-black-100 font-normal text-center text-base mt-2'>Login to Real Scout with Google</Text>
-        <TouchableOpacity className='bg-white  rounded-full w-full py-4 mt-5 shadow-md'>
-      
+        
+        <TouchableOpacity
+        onPress={()=>
+        {
+            router.push('/(root)/(tabs)')
+        }
+        }
+        className='bg-white  rounded-full w-full py-4 mt-5 shadow-md'>
+     
       <View className='flex flex-row items-center justify-center gap-5'>
       <Image 
         source={icons.google}
@@ -33,6 +41,7 @@ return (
         <Text className='text-lg font-rubik-medium text-black-300'>Sign Up with Google</Text>
        
         </View> 
+     
          </TouchableOpacity>
     </View>
     </ScrollView>

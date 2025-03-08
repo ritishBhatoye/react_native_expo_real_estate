@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tabs } from 'expo-router';
 import icons from '@/constants/icons';
-import { View, Text, Image, OpaqueColorValue } from 'react-native';
+import { View, Text, Image } from 'react-native';
 
 const TabIcon = ({ focused, icon, title }: { focused: boolean; icon: any; title: string }) => (
   <View className="flex-1 mt-3 flex flex-col items-center">
@@ -22,6 +22,7 @@ const TabLayout = () => {
   return (
     <Tabs
       screenOptions={{
+        headerShown: false,
         tabBarShowLabel: false,
         tabBarStyle: {
           backgroundColor: 'white',
@@ -35,6 +36,8 @@ const TabLayout = () => {
         name="index"
         options={{
           title: 'Home',
+          tabBarShowLabel: false,
+
           headerShown: false,
           tabBarIcon: ({ focused }) => <TabIcon icon={icons.home} focused={focused} title="Home" />,
         }}
@@ -43,6 +46,7 @@ const TabLayout = () => {
         name="explore"
         options={{
           title: 'Explore',
+          tabBarShowLabel: false,
           headerShown: false,
           tabBarIcon: ({ focused }) => (
             <TabIcon icon={icons.search} focused={focused} title="Explore" />
@@ -53,6 +57,8 @@ const TabLayout = () => {
         name="profile"
         options={{
           title: 'Profile',
+          tabBarShowLabel: false,
+
           headerShown: false,
           tabBarIcon: ({ focused }) => (
             <TabIcon icon={icons.person} focused={focused} title="Profile" />

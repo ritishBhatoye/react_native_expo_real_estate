@@ -14,7 +14,7 @@ const Card = ({ isHalf }: CardsProps) => {
       className={`relative flex flex-col ${isHalf ? 'w-52 bg-white' : 'w-60'} h-80 items-start `}>
       <Image
         source={images.japan}
-        className={`${isHalf ? 'size-52 p-4' : 'size-full'} size-full rounded-2xl `}
+        className={`${isHalf ? 'size-52 p-4' : 'size-full'}  rounded-2xl `}
       />
       {!isHalf && (
         <Image source={images.cardGradient} className="size-full rounded-2xl absolute bottom-0" />
@@ -40,6 +40,7 @@ const Card = ({ isHalf }: CardsProps) => {
             $12219
           </Text>
           <Image source={icons.heart} className="size-6" />
+          {isHalf && <Image source={icons.heart} className="w-5 h-5 mr-5" tintColor={'#191d31'} />}
         </View>
       </View>
     </TouchableOpacity>

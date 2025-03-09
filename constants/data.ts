@@ -3,6 +3,7 @@ import images from './images';
 
 export const cards = [
   {
+    id: 1,
     title: 'Card 1',
     location: 'Location 1',
     price: '$100',
@@ -11,6 +12,7 @@ export const cards = [
     image: images.newYork,
   },
   {
+    id: 2,
     title: 'Card 2',
     location: 'Location 2',
     price: '$200',
@@ -19,6 +21,7 @@ export const cards = [
     image: images.japan,
   },
   {
+    id: 3,
     title: 'Card 3',
     location: 'Location 3',
     price: '$300',
@@ -27,6 +30,7 @@ export const cards = [
     image: images.newYork,
   },
   {
+    id: 4,
     title: 'Card 4',
     location: 'Location 4',
     price: '$400',
@@ -38,17 +42,19 @@ export const cards = [
 
 export const featuredCards = [
   {
-    title: 'Featured 1',
-    location: 'Location 1',
-    price: '$100',
+    id: 1,
+    title: 'Merialla Villa',
+    location: 'New York, US',
+    price: '$1,20,000',
     rating: 4.8,
     image: images.newYork,
     category: 'house',
   },
   {
-    title: 'Featured 2',
-    location: 'Location 2',
-    price: '$200',
+    id: 2,
+    title: 'Modernica Apartme...',
+    location: 'New York, US',
+    price: '$3,80,000',
     rating: 3,
     image: images.japan,
     category: 'flat',

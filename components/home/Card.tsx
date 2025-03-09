@@ -11,7 +11,7 @@ interface CardsProps {
 const Card = ({ isHalf }: CardsProps) => {
   return (
     <TouchableOpacity
-      className={`relative flex flex-col ${isHalf ? 'w-52 bg-white' : 'w-60'} h-80 items-start `}>
+      className={`relative flex flex-col ${isHalf ? 'w-52 bg-white' : 'w-60 mx-2'} h-80 items-start `}>
       <Image
         source={images.japan}
         className={`${isHalf ? 'size-52 p-4' : 'size-full'}  rounded-2xl `}

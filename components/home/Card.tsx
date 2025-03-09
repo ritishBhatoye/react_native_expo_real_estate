@@ -25,7 +25,7 @@ const Card = ({ isHalf }: CardsProps) => {
         <Text className="text-xs font-rubik-bold text-primary-300 ">4.4</Text>
       </View>
       <View
-        className={`flex  flex-col items-start  ${isHalf ? 'p-1' : 'p-5 absolute bottom-0 left-0'} gap-1`}>
+        className={`flex  flex-col items-start  ${isHalf ? 'pl-5' : 'p-5 absolute bottom-0 left-0'} gap-1`}>
         <Text
           className={`${isHalf ? 'text-black-300 font-rubik-semibold text-base' : 'text-white font-rubik-bold text-lg'}    `}>
           Merialla Villa

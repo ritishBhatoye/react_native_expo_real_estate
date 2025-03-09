@@ -11,7 +11,7 @@ const FeaturedSection = () => {
     <View className="flex flex-col gap-2 p-2">
       <SectionHeader title={'Featured'} />
       <FlatList
-        className="px-4"
+        className="px-2"
         data={cards}
         horizontal
         showsHorizontalScrollIndicator={false}

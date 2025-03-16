@@ -14,6 +14,8 @@ const FeaturedSection = () => {
         className="px-2"
         data={cards}
         horizontal
+        contentContainerClassName=""
+        bounces={false}
         showsHorizontalScrollIndicator={false}
         keyExtractor={(item: any) => item.id}
         renderItem={() => <Card isHalf={false} />}

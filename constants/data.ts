@@ -1,7 +1,15 @@
 import icons from './icons';
 import images from './images';
 
-export const cards = [
+export const cards: {
+  id: number;
+  title: string;
+  location: string;
+  price: string;
+  rating: number;
+  category: string;
+  image: any;
+}[] = [
   {
     id: 1,
     title: 'Card 1',

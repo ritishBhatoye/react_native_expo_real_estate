@@ -9,15 +9,16 @@ import Filters from '../Elements/Filters';
 
 const OurRecommendationSection = () => {
   return (
-    <View className="flex flex-col gap-2 p-2">
-      <SectionHeader title={'Our Recommendations'} />
-      <Filters />
+    <View className="h-full">
       <FlatList
         data={cards}
-        horizontal
-        showsHorizontalScrollIndicator={false}
+        numColumns={2}
+        columnWrapperClassName="px-5 flex gap-5"
+        contentContainerClassName="py-5"
+        showsVerticalScrollIndicator={false}
         keyExtractor={(item: any) => item.id}
         renderItem={() => <Card isHalf={true} />}
+        ListHeaderComponent={<Filters />}
       />
     </View>
   );
